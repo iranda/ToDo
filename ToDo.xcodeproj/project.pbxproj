@@ -12,7 +12,9 @@
 		C57657B81E78D4730081DCA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57657B61E78D4730081DCA6 /* Main.storyboard */; };
 		C57657BA1E78D4730081DCA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C57657B91E78D4730081DCA6 /* Assets.xcassets */; };
 		C57657BD1E78D4730081DCA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57657BB1E78D4730081DCA6 /* LaunchScreen.storyboard */; };
-		C57657C81E78D4740081DCA6 /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57657C71E78D4740081DCA6 /* ToDoTests.swift */; };
+		C57657DE1E78D9D60081DCA6 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57657DD1E78D9D60081DCA6 /* ToDoItem.swift */; };
+		C57657E01E78E3130081DCA6 /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57657DF1E78E3130081DCA6 /* ToDoItemTests.swift */; };
+		C57657E21E799C4A0081DCA6 /* Loction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57657E11E799C4A0081DCA6 /* Loction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +36,10 @@
 		C57657BC1E78D4730081DCA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C57657BE1E78D4730081DCA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C57657C31E78D4740081DCA6 /* ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C57657C71E78D4740081DCA6 /* ToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTests.swift; sourceTree = "<group>"; };
 		C57657C91E78D4740081DCA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C57657DD1E78D9D60081DCA6 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoItem.swift; path = Model/ToDoItem.swift; sourceTree = "<group>"; };
+		C57657DF1E78E3130081DCA6 /* ToDoItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoItemTests.swift; path = Model/ToDoItemTests.swift; sourceTree = "<group>"; };
+		C57657E11E799C4A0081DCA6 /* Loction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Loction.swift; path = Model/Loction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		C57657B11E78D4730081DCA6 /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				C57657D91E78D9380081DCA6 /* Model */,
 				C57657B21E78D4730081DCA6 /* AppDelegate.swift */,
 				C57657B41E78D4730081DCA6 /* ViewController.swift */,
 				C57657B61E78D4730081DCA6 /* Main.storyboard */,
@@ -90,10 +95,27 @@
 		C57657C61E78D4740081DCA6 /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
-				C57657C71E78D4740081DCA6 /* ToDoTests.swift */,
+				C57657D81E78D9300081DCA6 /* Model */,
 				C57657C91E78D4740081DCA6 /* Info.plist */,
 			);
 			path = ToDoTests;
+			sourceTree = "<group>";
+		};
+		C57657D81E78D9300081DCA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C57657DF1E78E3130081DCA6 /* ToDoItemTests.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C57657D91E78D9380081DCA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C57657DD1E78D9D60081DCA6 /* ToDoItem.swift */,
+				C57657E11E799C4A0081DCA6 /* Loction.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +174,7 @@
 					C57657C21E78D4740081DCA6 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5387HJU427;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C57657AE1E78D4730081DCA6;
 					};
@@ -201,8 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C57657E21E799C4A0081DCA6 /* Loction.swift in Sources */,
 				C57657B51E78D4730081DCA6 /* ViewController.swift in Sources */,
 				C57657B31E78D4730081DCA6 /* AppDelegate.swift in Sources */,
+				C57657DE1E78D9D60081DCA6 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C57657C81E78D4740081DCA6 /* ToDoTests.swift in Sources */,
+				C57657E01E78E3130081DCA6 /* ToDoItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,11 +391,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5387HJU427;
 				INFOPLIST_FILE = ToDoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = d.sirous.ToDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDo.app/ToDo";
 			};
@@ -381,11 +410,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5387HJU427;
 				INFOPLIST_FILE = ToDoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = d.sirous.ToDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDo.app/ToDo";
 			};
