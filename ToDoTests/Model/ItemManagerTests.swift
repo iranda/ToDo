@@ -31,6 +31,13 @@ class ItemManagerTests: XCTestCase {
         XCTAssertEqual(sut.getItemsCount().toDoCount, curCounter+1)
     }
     
+    func test_addItem_WhenAlreadyExists() {
+        sut.add(ToDoItem(title: "Title"))
+        sut.add(ToDoItem(title: "Title"))
+        
+        XCTAssertEqual(sut.getItemsCount().toDoCount, 1)
+    }
+    
     func test_itemAt_ChangesCount() {
         let item = ToDoItem(title: "Foo")
         sut.add(item)

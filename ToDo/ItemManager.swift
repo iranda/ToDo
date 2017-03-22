@@ -17,7 +17,9 @@ struct ItemManager {
     }
     
     mutating func add (_ item: ToDoItem) {
-        self.toDoItems.append(item)
+        if !self.toDoItems.contains(item) {
+            self.toDoItems.append(item)
+        }
     }
     
     func item(at index: Int) -> ToDoItem {
