@@ -20,5 +20,8 @@ class ItemCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func configCell(with item: ToDoItem) {
+    }
 
 }
