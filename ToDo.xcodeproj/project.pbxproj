@@ -19,6 +19,8 @@
 		C5CF09131E831DFA008DAD1E /* ItemListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF09121E831DFA008DAD1E /* ItemListViewControllerTest.swift */; };
 		C5CF09181E832058008DAD1E /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF09171E832058008DAD1E /* ItemsListViewController.swift */; };
 		C5CF091A1E8347CA008DAD1E /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF09191E8347CA008DAD1E /* ItemListDataProvider.swift */; };
+		C5CF091C1E83774F008DAD1E /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF091B1E83774F008DAD1E /* ItemListDataProviderTests.swift */; };
+		C5CF091E1E841269008DAD1E /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF091D1E841269008DAD1E /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		C5CF09121E831DFA008DAD1E /* ItemListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListViewControllerTest.swift; path = Controller/ItemListViewControllerTest.swift; sourceTree = "<group>"; };
 		C5CF09171E832058008DAD1E /* ItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsListViewController.swift; path = Controller/ItemsListViewController.swift; sourceTree = "<group>"; };
 		C5CF09191E8347CA008DAD1E /* ItemListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListDataProvider.swift; path = Controller/ItemListDataProvider.swift; sourceTree = "<group>"; };
+		C5CF091B1E83774F008DAD1E /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListDataProviderTests.swift; path = Controller/ItemListDataProviderTests.swift; sourceTree = "<group>"; };
+		C5CF091D1E841269008DAD1E /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCell.swift; path = Controller/ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				C5CF09121E831DFA008DAD1E /* ItemListViewControllerTest.swift */,
+				C5CF091B1E83774F008DAD1E /* ItemListDataProviderTests.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			children = (
 				C5CF09171E832058008DAD1E /* ItemsListViewController.swift */,
 				C5CF09191E8347CA008DAD1E /* ItemListDataProvider.swift */,
+				C5CF091D1E841269008DAD1E /* ItemCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 				C5CF091A1E8347CA008DAD1E /* ItemListDataProvider.swift in Sources */,
 				C57657E61E79AE340081DCA6 /* ItemManager.swift in Sources */,
 				C57657B31E78D4730081DCA6 /* AppDelegate.swift in Sources */,
+				C5CF091E1E841269008DAD1E /* ItemCell.swift in Sources */,
 				C57657DE1E78D9D60081DCA6 /* ToDoItem.swift in Sources */,
 				C5CF09181E832058008DAD1E /* ItemsListViewController.swift in Sources */,
 			);
@@ -266,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C57657E41E79ADAD0081DCA6 /* ItemManagerTests.swift in Sources */,
+				C5CF091C1E83774F008DAD1E /* ItemListDataProviderTests.swift in Sources */,
 				C57657E01E78E3130081DCA6 /* ToDoItemTests.swift in Sources */,
 				C5CF09131E831DFA008DAD1E /* ItemListViewControllerTest.swift in Sources */,
 			);
