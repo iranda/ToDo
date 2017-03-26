@@ -30,6 +30,11 @@ struct ItemManager {
         self.doneItems.append(self.toDoItems.remove(at: index))
     }
     
+    mutating func uncheckItem(at index: Int) {
+        let item = self.doneItems.remove(at: index)
+        toDoItems.append(item)
+    }
+    
     func doneItem(at index: Int) -> ToDoItem {
         return self.doneItems[index]
     }
