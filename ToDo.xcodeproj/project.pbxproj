@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C528538C1E87504600B17136 /* ItemCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528538B1E87504600B17136 /* ItemCellTests.swift */; };
 		C57657B31E78D4730081DCA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57657B21E78D4730081DCA6 /* AppDelegate.swift */; };
 		C57657B81E78D4730081DCA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57657B61E78D4730081DCA6 /* Main.storyboard */; };
 		C57657BA1E78D4730081DCA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C57657B91E78D4730081DCA6 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C528538B1E87504600B17136 /* ItemCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCellTests.swift; path = Controller/ItemCellTests.swift; sourceTree = "<group>"; };
 		C57657AF1E78D4730081DCA6 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57657B21E78D4730081DCA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C57657B71E78D4730081DCA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				C5CF09121E831DFA008DAD1E /* ItemListViewControllerTest.swift */,
 				C5CF091B1E83774F008DAD1E /* ItemListDataProviderTests.swift */,
+				C528538B1E87504600B17136 /* ItemCellTests.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C57657E41E79ADAD0081DCA6 /* ItemManagerTests.swift in Sources */,
+				C528538C1E87504600B17136 /* ItemCellTests.swift in Sources */,
 				C5CF091C1E83774F008DAD1E /* ItemListDataProviderTests.swift in Sources */,
 				C57657E01E78E3130081DCA6 /* ToDoItemTests.swift in Sources */,
 				C5CF09131E831DFA008DAD1E /* ItemListViewControllerTest.swift in Sources */,

@@ -59,8 +59,6 @@ class ItemListDataProviderTests: XCTestCase {
         sut?.itemManager?.add(ToDoItem(title: "Foo"))
         tableView?.reloadData()
         
-        tableView?.register(ItemCell.self,
-                            forCellReuseIdentifier: "ItemCell")
         let cell = tableView?.cellForRow(at: IndexPath(row: 0, section: 0))
         XCTAssertTrue(cell is ItemCell)
     }
@@ -176,7 +174,7 @@ extension ItemListDataProviderTests {
         var catchedItem: ToDoItem?
         
         
-        override func configCell(with item: ToDoItem) {
+        override func configCell(with item: ToDoItem, checked: Bool = false) {
             catchedItem = item
         } 
     } 
